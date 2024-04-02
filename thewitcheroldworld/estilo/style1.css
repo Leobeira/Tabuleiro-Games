@@ -55,3 +55,47 @@
     color: #1e2127;
     transform: scale(1);
   }
+
+  /* CSS para a janela flutuante*/
+.tooltip {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  width: auto;
+  max-width: 200px;
+  /*padding: 25px; /* Adiciona algum espaço ao redor do tooltip */
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;  
+   /* Faça a imagem e o texto aparecerem lado a lado */
+  display: flex;   
+  border-radius: 5px;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  right: 100%;  /* Place the tooltip text at the bottom of the tooltip */
+  /*left: 50%;*/
+  top: 0px;
+  margin-left: 5dvw; /* Use half of the width (120/2 = 60), to center the tooltip text */
+  margin-top: 0%;
+  opacity: 0;
+  transition: opacity 0.3s;
+  /*max-height: max-content; /* Ajuste este valor conforme necessário */
+  /*overflow-y: auto; /* Adiciona rolagem se o conteúdo for muito longo */
+}
+
+.tooltip .tooltiptext img {
+  margin-right: 10px; /* Adiciona algum espaço à direita da imagem */
+  padding: 10px;
+  margin-bottom: 0%;
+  
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
