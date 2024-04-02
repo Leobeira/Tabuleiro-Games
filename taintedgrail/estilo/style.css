@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Celtic";
+    src: url('../fontes/celtic_gaelige.ttf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Dragon";
+    src: url('../fontes/DragonForcE.ttf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #8E9889;
+    --cor1: #B77D46;
+    --cor2: #92683F;
+    --cor3: #312C28;
+    --cor4: #44281C;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-celtic: 'Celtic', 'cursive';
+    --fonte-dragon: 'Dragon', 'cursive';
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+    min-height: 150px;    
+    letter-spacing: 1px; /* Ajusta o espaçamento entre as letras */
+    font-weight: normal; /* Deixa as letras mais finas */
+}
+
+a.externo::after {
+    content: '\00A0\1F517';
+}
+
+header {
+    background-image: linear-gradient(to right, black 28%, var(--cor3) 50%);
+    height: 200px;
+    display: flex; /* Adiciona Flexbox */
+    align-items: center; /* Centraliza os itens verticalmente */
+    /*justify-content: space-around; Espaça os itens uniformemente, caso queira deixar todos centralizados */
+}
+
+header > img {
+    height: 5px;
+    padding-left: 2px;
+}
+
+.titulo-descricao > h1 {
+    color: white;
+    font-family: var(--fonte-dragon);
+    font-size: 3em;
+    font-weight: normal;
+    margin-left: 20px;
+}
+
+.titulo-descricao > p {
+    color: white;
+    font-family: var(--fonte-dragon);
+    font-size: 1.3em;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+nav {
+    background-image: linear-gradient(to right, black 28%, var(--cor3) 50%);
+    padding: 10px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.363);
+}
+
+.dropdown > a, nav > a {
+    color: var(--cor1);
+    padding: 10px;
+    border-radius: 5px;
+    font-family: var(--fonte-celtic);
+    text-decoration: none; /*não ter sublinhado*/ 
+    font-weight: bold; 
+    transition-duration: 0.5s; /*leva 1 segundo quando coloca o mouse por cima*/    
+}
+
+.dropdown:hover > a, nav > a:hover {
+    background-color: var(--cor4);
+    color: var(--cor0);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    background-color: var(--cor3);
+}
+
+.dropdown-content a {
+    color: var(--cor1);
+    padding: 10px;
+    border-radius: 5px;
+    font-family: var(--fonte-celtic);
+    text-decoration: none; /*não ter sublinhado*/ 
+    font-weight: bold; 
+    transition-duration: 0.5s; /*leva 1 segundo quando coloca o mouse por cima*/    
+}
+
+.dropdown-content a:hover {
+    /*background-color: var(--cor2); sem background para não atrapalhar a leitura*/
+    color: var(--cor0);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f7fff4a3;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.419);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1{
+    color: var(--cor4);
+    font-family: var(--fonte-dragon);
+    text-align: center;
+    text-indent: 20px;
+    font-weight: normal;
+    font-size: 4em;
+}
+
+main h2 {
+    font-family: var(--fonte-dragon);
+    color: var(--cor3);
+    font-size: 2.5em;
+    font-weight: normal;    
+    text-indent: 20px; 
+    margin-top: 20px;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+}
+
+main p {
+    margin: 10px 0px;
+    text-align: justify;
+    text-indent: 20px; /*Este é o recuo do início*/
+    font-size: 1em;
+    line-height: 2em; /*Altura da linha*/
+
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+main img {
+    width: auto;
+    height: auto;
+}
+
+main img.pequena{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+div.video {
+    background-color: var(--cor4);    
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 59%; /*para evitar margens pretas entre o vídeo e a borda*/
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute; /*para poder mexer*/
+    top: 5%; /*para deixar margens*/
+    left: 5%;
+    width: 90%; /*para nãoa ficar colado nas laterais*/
+    height: 90%;
+}
+
+footer {
+    background-color: var(--cor3);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+

@@ -1,0 +1,283 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Celtic";
+    src: url('../fontes/celtic_gaelige.ttf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Magic";
+    src: url('../fontes/YuseiMagic-Regular.ttf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Knight";
+    src: url('../fontes/KnightsQuest.ttf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #74818D;
+    --cor1: #61686E;
+    --cor2: #3C3F46;
+    --cor3: #22252B;
+    --cor4: #0C0E10;
+    --cor5: #C48E16;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-celtic: 'Celtic', 'cursive';
+    --fonte-magic: 'Magic', 'cursive';
+    --fonte-knight: 'Knight', 'cursive';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+    min-height: 150px;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+
+header {
+    background-image: linear-gradient(to right, black 10%, var(--cor2));
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+header > img {
+    height: 5px;
+    padding-left: 2px;
+}
+
+.titulo-descricao > h1 {
+    color: white;
+    font-family: var(--fonte-knight);
+    font-size: 3em;
+    font-weight: normal;
+    margin-left: 20px;
+}
+
+.titulo-descricao > p {
+    color: white;
+    font-family: var(--fonte-knight);
+    font-size: 1.3em;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+nav {
+    background-image: linear-gradient(to right, black 10%, var(--cor2));
+    padding: 10px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.363);
+}
+
+.dropdown > a, nav > a {
+    color: var(--cor5);
+    padding: 10px;
+    border-radius: 5px;
+    font-family: var(--fonte-celtic);
+    text-decoration: none; /*não ter sublinhado*/ 
+    font-weight: bold; 
+    transition-duration: 0.5s; /*leva 1 segundo quando coloca o mouse por cima*/    
+}
+
+.dropdown:hover > a, nav > a:hover {
+    background-color: var(--cor2);
+    color: var(--cor0);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    background-color: var(--cor1);
+}
+
+.dropdown-content a {
+    color: var(--cor5);
+    padding: 10px;
+    border-radius: 5px;
+    font-family: var(--fonte-celtic);
+    text-decoration: none; /*não ter sublinhado*/ 
+    font-weight: bold; 
+    transition-duration: 0.5s; /*leva 1 segundo quando coloca o mouse por cima*/    
+}
+
+.dropdown-content a:hover {
+    /*background-color: var(--cor2); sem background para não atrapalhar a leitura*/
+    color: var(--cor0);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #c8cdd2;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.419);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1{
+    color: var(--cor4);
+    font-family: var(--fonte-knight);
+    text-align: center;
+    text-indent: 20px;
+    font-weight: normal;
+    font-size: 4em;
+    text-shadow: 2px 2px 2px black;
+}
+
+main h1 {    
+    background: -webkit-linear-gradient(left, red, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;/*este código é colocado caso o navegador não funcione com este webkit ele abrirá o padrão*/
+    color: transparent;/*idêntico àcima para o mesmo problema*/
+} /*o texto terá um degradê que vai da cor vermelha à cor amarela da esquerda para a direita. A propriedade -webkit-background-clip: text; faz com que o fundo (neste caso, o degradê) seja aplicado apenas ao texto, e a propriedade -webkit-text-fill-color: transparent; faz com que a cor original do texto seja transparente, permitindo que o degradê apareça.*/
+
+main h2 {
+    font-family: var(--fonte-knight);
+    color: var(--cor5);
+    font-size: 2.5em;
+    font-weight: normal;    
+    text-indent: 20px; 
+    margin-top: 20px;
+    background-image: linear-gradient(to right, var(--cor4), transparent);    
+}
+
+main p {
+    margin: 10px 0px;
+    text-align: justify;
+    text-indent: 20px; /*Este é o recuo do início*/
+    font-size: 1em;
+    line-height: 2em; /*Altura da linha*/
+
+}
+
+
+div.video {
+    background-color: var(--cor4);    
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 59%; /*para evitar margens pretas entre o vídeo e a borda*/
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute; /*para poder mexer*/
+    top: 5%; /*para deixar margens*/
+    left: 5%;
+    width: 90%; /*para nãoa ficar colado nas laterais*/
+    height: 90%;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.img-container img {
+    width: auto;
+    height: auto;
+    max-width: 640px;
+    margin: auto;
+}
+
+.img-container img.smaller {
+    max-width: 150px; /* Ajuste este valor para o tamanho desejado */
+}
+
+.img-container img.bigger {
+    max-width: 500px;
+}
+
+main img {
+    width: auto;
+    height: auto;
+}
+
+main img.pequena{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px; /*para arredondar*/
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.296);
+}
+
+aside > h3 {
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor1));
+    color: var(--cor5);
+    padding: 10px;
+    margin: -10px -10px 0px -10px; /*Isso para ele juntar na margem de cima, esquerda e direita */
+    border-radius: 10px 10px 0px 0px; /*Na ordem em cima direita, em cima esquerda como 10, baixo direita e baixo esquerda como zero*/
+    font-size: 1.5em;
+    
+}
+
+aside > p {
+    color: #e6a925;
+    font-family: var(--fonte-knight);
+    font-weight: normal;
+    font-size: 1.5em;
+    
+}
+
+aside > ul {
+    list-style-image: url('../imagens/garrapeq.png');
+    list-style-position: inside;     
+    font-size: 20px; /* ajuste o valor conforme necessário */
+    color: var(--cor4); /* ajuste a cor conforme necessário */
+
+}
+
+aside > ul > li:hover {
+    color: #f00; /* ajuste a cor conforme necessário */
+}
+
+.list-item-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.monster-image {
+    width: 50px; /* ajuste o tamanho conforme necessário */
+    height: 50px;
+    display: none;
+}
+
+
+
+footer {
+    background-color: var(--cor3);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}

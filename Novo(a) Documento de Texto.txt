@@ -1,0 +1,75 @@
+Página Principal:
+
+Introdução: Comece com uma breve introdução sobre o que são jogos de tabuleiro e a importância deles na cultura e no entretenimento. Você pode mencionar como os jogos de tabuleiro têm ganhado cada vez mais destaque em todos os cantos do mundo, tornando-se um verdadeiro fenômeno entre os mais variados públicos, das mais diversas idades1.
+
+Categorias de Jogos: Apresente as categorias de jogos que você vai abordar no site, como RPG, Dungeons Crawlers e WARGAMES. Para cada categoria, dê uma breve descrição do que ela envolve. Por exemplo, um Dungeon Crawler é um tipo de cenário em jogos de RPG de fantasia em que os heróis navegam em um ambiente de labirinto (uma “masmorra”), lutando contra vários monstros, evitando armadilhas, resolvendo quebra-cabeças e saqueando qualquer tesouro que possam encontrar2.
+
+Destaques: Destaque alguns jogos populares de cada categoria. Por exemplo, Gloomhaven é um dos maiores jogos de tabuleiro Dungeon Crawler, com 95 cenários totalmente diferentes3.
+Páginas Específicas para cada Jogo:
+
+Descrição do Jogo: Descreva o jogo, suas regras, número de jogadores, tempo médio de jogo, etc.
+
+Como Jogar: Dê um passo a passo de como jogar o jogo. Se possível, inclua imagens ou diagramas para ilustrar.
+
+Dicas e Estratégias: Compartilhe algumas dicas e estratégias para novos jogadores. Isso pode incluir coisas como as melhores jogadas iniciais, erros comuns a evitar, etc.
+
+Resenhas: Inclua resenhas do jogo. Isso pode ser algo que você escreveu ou resenhas de outros jogadores.
+
+Links Úteis: Forneça links para recursos úteis, como vídeos de tutorial, fóruns de discussão do jogo, lojas online onde o jogo pode ser comprado, etc.
+
+# Bem-vindo ao Mundo dos Jogos de Tabuleiro!
+
+## Introdução
+Os jogos de tabuleiro são uma parte importante da cultura e do entretenimento, proporcionando uma maneira divertida e envolvente de passar o tempo, desafiar a mente e socializar com amigos e familiares. Eles têm ganhado cada vez mais destaque em todos os cantos do mundo, tornando-se um verdadeiro fenômeno entre os mais variados públicos, das mais diversas idades.
+
+## Categorias de Jogos
+Neste site, vamos explorar várias categorias de jogos de tabuleiro, incluindo:
+
+- **RPG (Role-Playing Games)**: Esses jogos permitem que os jogadores assumam o papel de personagens e participem de aventuras imaginativas. Exemplos populares incluem "Dungeons & Dragons" e "Pathfinder".
+
+- **Dungeon Crawlers**: Neste tipo de jogo de RPG, os heróis navegam em um ambiente de labirinto (uma "masmorra"), lutando contra vários monstros, evitando armadilhas, resolvendo quebra-cabeças e saqueando qualquer tesouro que possam encontrar. Um exemplo popular é "Gloomhaven", que oferece 95 cenários totalmente diferentes.
+
+- **WARGAMES**: Estes são jogos de estratégia que normalmente recriam batalhas históricas ou fictícias em uma escala grande ou pequena. Exemplos populares incluem "Warhammer 40,000" e "Axis & Allies".
+
+## Destaques
+Aqui estão alguns dos jogos mais populares em cada categoria que vamos explorar em detalhes neste site:
+
+- **RPG**: "Dungeons & Dragons", "Pathfinder"
+- **Dungeon Crawlers**: "Gloomhaven", "Descent: Journeys in the Dark"
+- **WARGAMES**: "Warhammer 40,000", "Axis & Allies"
+
+Fique ligado para análises detalhadas, dicas de estratégia, e muito mais para cada um desses jogos incríveis!
+
+
+Bem-vindo ao nosso site de jogos de tabuleiro!
+Aqui, você encontrará uma variedade de jogos de tabuleiro que vão desde estratégia e aventura até jogos de guerra e fantasia. Navegue pelas categorias abaixo para encontrar o jogo perfeito para você!
+
+Jogos de Estratégia
+The Witcher: Old World1: Um jogo de aventura e estratégia onde os jogadores assumem o papel de bruxos recém-treinados, enfrentando monstros e cumprindo contratos em um mundo cheio de perigos e maravilhas.
+
+Jogos de Aventura
+Tainted Grails: The Fall of Avalon2: Um jogo de sobrevivência e exploração rico em histórias para 1-4 jogadores, ambientado em um universo sombrio que mistura lendas arturianas e mitologia celta.
+
+Jogos de Guerra
+Ankh Gods of Egypt: Um jogo de guerra estratégico onde os jogadores assumem o papel de deuses do antigo Egito, competindo para sobreviver enquanto a sociedade começa a esquecer os velhos costumes.
+
+Jogos de Fantasia
+Legend of Andor4: Um jogo de fantasia cooperativa onde os jogadores assumem o papel de um dos quatro heróis lutando para proteger Andor de invasores.
+
+Root4: Um jogo de aventura e guerra onde 2 a 4 jogadores lutam pelo controle de uma vasta floresta, cada um controlando uma facção diferente com habilidades únicas.
+
+Cada título de jogo é um link para uma página separada com mais informações sobre o jogo. Esperamos que você encontre o jogo perfeito para você! Boa sorte e divirta-se!
+
+
+
+<main>
+    <section style="background-image: url('url_da_imagem_1.jpg'); background-attachment: fixed;">
+        <h1>The Witcher: Old World</h1>
+        <p>Descrição do jogo...</p>
+    </section>
+    <section style="background-image: url('url_da_imagem_2.jpg'); background-attachment: fixed;">
+        <h1>Tainted Grails: The Fall of Avalon</h1>
+        <p>Descrição do jogo...</p>
+    </section>
+    <!-- Adicione mais seções para os outros jogos -->
+</main>

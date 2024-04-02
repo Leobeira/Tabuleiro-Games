@@ -1,0 +1,292 @@
+@charset "UFT-8";
+
+@font-face {
+    font-family: "Celtic";
+    src: url('../fontes/celtic_gaelige.ttf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Magic";
+    src: url('../fontes/YuseiMagic-Regular.ttf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Knight";
+    src: url('../fontes/KnightsQuest.ttf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #74818D;
+    --cor1: #82968C;
+    --cor2: #E0CA3C;
+    --cor3: #FF7700;
+    --cor4: #32A287;
+    --cor5: #443627;
+
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-celtic: 'Celtic', 'cursive';
+    --fonte-magic: 'Magic', 'cursive';
+    --fonte-knight: 'Knight', 'cursive';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: black;
+    font-family: var(--fonte-padrao);
+    min-height: 150px;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+
+header {
+    background-image: linear-gradient(to right, black 10%, var(--cor2));
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+header > img {
+    height: 5px;
+    padding-left: 2px;
+}
+
+.titulo-descricao > h1 {
+    color: white;
+    font-family: var(--fonte-knight);
+    font-size: 3em;
+    font-weight: normal;
+    margin-left: 20px;
+}
+
+.titulo-descricao > p {
+    color: white;
+    font-family: var(--fonte-knight);
+    font-size: 1.3em;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+nav {
+    background-image: linear-gradient(to right, black 10%, var(--cor2));
+    padding: 10px 10px 10px 30px;    
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.363);
+    
+}
+
+.dropdown > a, nav > a {
+    color: var(--cor3);
+    padding: 10px;
+    margin-left: 40px;
+    border-radius: 5px;
+    font-family: var(--fonte-celtic);
+    text-decoration: none; /*não ter sublinhado*/ 
+    font-weight: bold; 
+    transition-duration: 0.5s; /*leva 1 segundo quando coloca o mouse por cima*/    
+}
+
+.dropdown:hover > a, nav > a:hover {
+    background-color: var(--cor5);
+    color: var(--cor3);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;    
+}
+
+.dropdown-content {
+    display: none;    
+    /*white-space: nowrap;*/
+    position: absolute;
+    min-width: 150px;    
+    z-index: 1;
+    background-color: #443627ce;     
+    top: 30px; /* Adicione esta linha. Ajuste o valor conforme necessário */
+}
+
+.dropdown-content a {
+    color: var(--cor3);
+    padding: 2px;
+    border: 2px;
+    border-radius: 5px;
+    height: 5px;
+    font-family: var(--fonte-magic);
+    text-decoration: none; /*não ter sublinhado*/ 
+    font-weight: bold; 
+    transition-duration: 0.5s; /*leva 0.5 segundos quando coloca o mouse por cima*/  
+    display: block;
+    white-space: nowrap;  
+}
+
+.dropdown-content a:hover {
+    /*background-color: var(--cor2); sem background para não atrapalhar a leitura*/
+    color: var(--cor0);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+   
+    
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto; 
+    margin-bottom: 30px;
+    padding: 20px;
+    background-image: linear-gradient(to bottom right,#755f47, #f7c998ac);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.419);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;   
+    
+}
+
+main h1{
+    color: white;
+    font-family: var(--fonte-knight);
+    text-align: center;
+    text-indent: 20px;
+    font-weight: normal;
+    font-size: 4em;
+    text-shadow: 2px 2px 2px black;
+}
+
+
+
+main h2 {
+    font-family: var(--fonte-knight);
+    color: white;
+    font-size: 1.5vw;
+    font-weight: normal;    
+    text-indent: 20px; 
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 60px;
+    padding-top: 50px;
+      
+}
+
+main p {
+    color: white;
+    margin: 10px 0px;
+    text-align: justify;
+    text-indent: 20px; /*Este é o recuo do início*/
+    font-size: 1em;
+    line-height: 2em; /*Altura da linha*/
+
+}
+
+main div h1 {     
+    font-family: var(--fonte-magic);
+    font-size: 4vw;
+    background: -webkit-linear-gradient(left, black, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+main div h2 {
+    font-family: var(--fonte-magic);
+    padding: 5px;
+    
+}
+
+
+
+section {
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--font3);
+    font-size: 3.5vh;
+}
+
+section a {
+    color: yellow;
+    text-decoration: none;
+
+}
+section a:hover{    
+    text-decoration: underline;    
+    color: var(--cor3);
+}
+
+
+section.imagem {
+    background-color: rgba(0, 0, 0, 0.221);
+    color: white;  
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.5);
+    background-size: 50%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+}
+
+section.imagem > p {       
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.534);
+    text-shadow: 1px 1px 0px black;
+    text-align: justify; 
+    width: 45%; /* ou use max-width se preferir */
+    word-wrap: break-word;
+    line-height: 1.5; /* ajuste conforme necessário */   
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.png');
+    background-position: right center;
+    
+}
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+  
+}
+
+section#img03 {
+    background-image: url('../imagens/background003.jpg');
+    background-position: right center;
+    
+}
+
+section#img04 {
+    background-image: url('../imagens/background004.jpg');
+    background-position: right center;
+    
+}
+
+section#img05 {
+    background-image: url('../imagens/background005.jpg');
+    background-position: right center;
+    
+}
+
+.config01 {    
+    color: #fefefe;    
+    font-family: var(--fonte-knight);
+    font-size: 2em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.329);
+    
+}/*para o H2 do main*/
+
+.config02 {
+    padding: 20px;
+    color: #ded4ca;
+    text-align: center;
+    font-family: var(--fonte-knight);
+    font-size: 2em;
+}/*para o rodapé*/
+
+
