@@ -23,3 +23,69 @@ tooltips.forEach(function(tooltip) {
     }
   });
 });
+
+/*// Cria uma nova instância Popper para o Alp
+const popperInstanceAlp = Popper.createPopper(
+  document.querySelector('#monster-Alp'), // Elemento de referência
+  document.querySelector('#tooltip-Alp'), // Tooltip
+  {
+    // configurações da Popper...
+  }
+);
+
+// Mostra a tooltip quando o mouse passa sobre o Alp
+document.querySelector('#monster-Alp').addEventListener('mouseenter', function() {
+  document.querySelector('#tooltip-Alp').style.visibility = 'visible';
+  popperInstanceAlp.update(); // Atualiza a posição da tooltip
+});
+
+// Esconde a tooltip quando o mouse sai do Alp
+document.querySelector('#monster-Alp').addEventListener('mouseleave', function() {
+  document.querySelector('#tooltip-Alp').style.visibility = 'hidden';
+});*/
+
+/*// Lista de todos os ids dos monstros
+var monsters = ['Alp', 'Werewolf', 'Arachas Drone','Archespore', 'Barghest', 'Basilisk', 'Bruxa', 'Cockatrice', 'Erynia', 'Fiend', 'Foglet', 'GhoulGriffin', 'Harpy', 'Katakan', 'Ozzrel', 'Wyvern'];
+
+// Loop sobre cada monstro
+monsters.forEach(function(monster) {
+  // Cria uma nova instância Popper para o monstro
+  const popperInstance = Popper.createPopper(
+    document.querySelector('#monster-' + monster), // Elemento de referência
+    document.querySelector('#tooltip-' + monster), // Tooltip
+    {
+      // configurações da Popper...
+    }
+  );
+
+  // Mostra a tooltip quando o mouse passa sobre o monstro
+  document.querySelector('#monster-' + monster).addEventListener('mouseenter', function() {
+    document.querySelector('#tooltip-' + monster).style.visibility = 'visible';
+    popperInstance.update(); // Atualiza a posição da tooltip
+  });
+
+  // Esconde a tooltip quando o mouse sai do monstro
+  document.querySelector('#monster-' + monster).addEventListener('mouseleave', function() {
+    document.querySelector('#tooltip-' + monster).style.visibility = 'hidden';
+  });
+});*/
+
+// Seleciona todos os monstros
+var monsters = document.querySelectorAll('.monster');
+
+// Adiciona um listener de evento 'mouseover' a cada monstro
+monsters.forEach(function(monster) {
+  monster.addEventListener('mouseenter', function() {
+    // Atualiza a imagem e o texto da tooltip
+    document.querySelector('#tooltip-img').src = this.dataset.img;
+    document.querySelector('#tooltip-text').textContent = this.dataset.text;
+
+    // Mostra a tooltip
+    document.querySelector('#tooltip').style.visibility = 'visible';
+  });
+
+  monster.addEventListener('mouseleave', function() {
+    // Esconde a tooltip
+    document.querySelector('#tooltip').style.visibility = 'hidden';
+  });
+});

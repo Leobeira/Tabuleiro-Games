@@ -225,7 +225,8 @@ main img.pequena{
 
 aside {
     background-color: var(--cor1);
-    padding: 10px;
+    padding: 10px;    
+    margin-bottom: 10px;
     border-radius: 10px; /*para arredondar*/
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.296);
 }
@@ -248,12 +249,17 @@ aside > p {
     
 }
 
+aside > img {
+    
+}
+
 aside > ul {
     list-style-image: url('../imagens/garrapeq.png');
     list-style-position: inside;     
     font-size: 20px; /* ajuste o valor conforme necessário */
     color: var(--cor4); /* ajuste a cor conforme necessário */
-    columns: 2;
+    /*columns: 2;*/
+    margin-bottom: 0px;
 
 }
 
