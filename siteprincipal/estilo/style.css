@@ -172,7 +172,7 @@ main h2 {
     margin-top: 20px;
     margin-left: 60px;
     padding-top: 50px;
-      
+    transition: font-size 0.5s ease-in-out;
 }
 
 main p {
@@ -193,6 +193,12 @@ main div h1 {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
+    transition: font-size 0.5s ease-in-out;
+    @media (max-width: 600px) {
+        main div h1 {
+            font-size: 3vw;
+        }
+    }
 }
 
 main div h2 {
